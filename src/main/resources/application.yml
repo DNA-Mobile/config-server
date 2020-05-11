@@ -6,5 +6,5 @@ spring:
     config:
       server:
         git:
-          uri: http://github.com/dnamobile/config-server
+          uri: https://github.com/dnamobile/config-server
           search-paths: microservices
