@@ -7,4 +7,4 @@ spring:
       server:
         git:
           uri: https://github.com/dnamobile/config-server
-          search-paths: microservices
+          search-paths: telecom, geo
