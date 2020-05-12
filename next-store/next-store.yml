@@ -8,7 +8,7 @@ spring:
   
 #  profiles: local
   datasource:
-    url: jdbc:mysql://localhost:3306/next-store?useTimezone=true&serverTimezone=UTC 
+    url: jdbc:mysql://localhost:3306/nextstore?useTimezone=true&serverTimezone=UTC 
     driver-class-name: com.mysql.cj.jdbc.Driver 
     username: root
     password: laila3715
