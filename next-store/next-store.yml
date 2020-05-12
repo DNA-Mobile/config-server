@@ -1,0 +1,28 @@
+spring: 
+  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  
+  datasource:
+    profiles: local
+    url: jdbc:mysql://localhost:3306/next-store?useTimezone=true&serverTimezone=UTC 
+    driver-class-name: com.mysql.cj.jdbc.Driver 
+    username: root
+    password: laila3715
+    
+  datasource:
+    profiles: postgre
+    url: jdbc:postgresql://localhost:3306/nextstore
+    driver-class-name: com.mysql.cj.jdbc.Driver 
+    username: postgre
+    password: laila@3715
+    
+  profiles: heroku
+  datasource:
+    url: postgresql://ec2-18-233-137-77.compute-1.amazonaws.com:5432/d4667p7tmaidgr
+    driver-class-name: org.postgresql.Driver
+    username: iqbsmezoymfswg
+    password: 6af1a746663629cf7ac32fb947fe85ab70c65a9a8b5ecd0a7ee145f8a8faf794
