@@ -7,6 +7,6 @@ spring:
       server:
         git:
           uri: https://github.com/dnamobile/config-server
-          search-paths: telecom, geo, core,  next-store
+          search-paths: geo, pessoa, empresa, finance, telecom, next-store
           username: diretoria@dnambille.com.br
           password: laila@3715

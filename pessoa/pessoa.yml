@@ -6,7 +6,7 @@ spring:
       ddl-auto: update
 
   datasource: 
-    url: jdbc:mysql://localhost:3306/core?useTimezone=true&serverTimezone=UTC 
+    url: jdbc:mysql://localhost:3306/pessoa?useTimezone=true&serverTimezone=UTC 
     driver-class-name: com.mysql.cj.jdbc.Driver 
     username: root
     password: laila3715
