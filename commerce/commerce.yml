@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect 
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+
+  datasource: 
+    url: jdbc:mysql://localhost:3306/commerce?useTimezone=true&serverTimezone=UTC 
+    driver-class-name: com.mysql.cj.jdbc.Driver 
+    username: root
+    password: laila3715
+    
+#  profiles: prod
+#  datasource: 
+#    url: jdbc:mysql://localhost:3306/geo?useTimezone=true&serverTimezone=UTC 
+#    driver-class-name: com.mysql.cj.jdbc.Driver 
+#    username: root
+#    password: laila3715
