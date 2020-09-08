@@ -1,14 +1,17 @@
 spring:
-  jpa:
+  data:
+    mongodb:
+      uri: mogodb://localhost:27017/geo
+  jpa:            
     database-platform: org.hibernate.dialect.MySQL5Dialect 
     generate-ddl: true
     hibernate:
       ddl-auto: update
-      
-  data.mongodb:
-    host: localhost
-    port: 27017
-    database: geo
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
 
   datasource: 
     url: jdbc:mysql://localhost:3306/geo?useTimezone=true&serverTimezone=UTC 
