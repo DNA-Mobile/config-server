@@ -7,6 +7,6 @@ spring:
       server:
         git:
           uri: https://github.com/DNA-Mobile/config-server
-          search-paths: auto, commerce, core, delivery, enterprise, finance, geo, people, restaurant, telecom
+          search-paths: auto, commerce, core, delivery, enterprise, finance, geo, people, restaurant, standard, telecom
           username: diretoria@dnambille.com.br
           password: laila@3715
