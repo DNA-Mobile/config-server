@@ -1,4 +1,7 @@
 spring:
+  main:
+    allow-bean-definition-overriding: true
+ 
   data:
     mongodb:
       host: mongodb://localhost
@@ -6,7 +9,7 @@ spring:
       database: finance
       username: admin
       password: laila@3715
-      
+
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect 
     generate-ddl: true
