@@ -6,11 +6,17 @@ spring:
       database: standard
       username: admin
       password: laila@3715
+      
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect 
     generate-ddl: true
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
 
   datasource: 
     url: jdbc:mysql://localhost:3306/standard?useTimezone=true&serverTimezone=UTC 
