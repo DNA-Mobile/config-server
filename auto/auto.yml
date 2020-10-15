@@ -13,6 +13,7 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect 
     generate-ddl: true
+    open-in-view: false
     hibernate:
       ddl-auto: update
 
