@@ -1,12 +1,22 @@
 server:
   port: 8888
-  
+
 spring:
+  application:
+    name: config
+
   cloud:
     config:
       server:
         git:
           uri: https://github.com/DNA-Mobile/config-server
-          search-paths: auto, commerce, core, delivery, enterprise, finance, geo, people, restaurant, standard, telecom
+          search-paths: auto, commerce, core, delivery, enterprise, finance, geo, people, restaurant, standard, telecom, zuul
           username: diretoria@dnambille.com.br
           password: laila@3715
+          
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
