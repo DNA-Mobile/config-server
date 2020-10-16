@@ -28,17 +28,3 @@ spring:
 #    driver-class-name: com.mysql.cj.jdbc.Driver 
 #    username: root
 #    password: laila3715
-
-
-zuul:
-  host:
-    connect-timeout-millis: 5000000
-    socket-timeout-millis: 5000000
-  
-  prefix: /api
-  ignoredServices: '*'
-  routes:
-    marca:
-      url: http://localhost:8002
-      serviceId: marca
-      path: /marca/**
