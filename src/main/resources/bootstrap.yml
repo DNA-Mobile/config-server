@@ -1,0 +1,1 @@
+server:  port: 8762spring:  application:    name: config    cloud:    config:      uri: http://localhost:8888# recomendado pelo spring    loadbalancer:      ribbon:        enabled: false      ribbon:  eureka:    enabled: false
