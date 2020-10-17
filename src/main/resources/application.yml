@@ -1,15 +1,33 @@
+server:
+  port: 8888
+
 spring:
+  application:
+    name: config
+  
   cloud:
     config:
+      uri: http://localhost:8888
       server:
         git:
           uri: https://github.com/DNA-Mobile/config-server
           search-paths: auto, commerce, core, delivery, enterprise, finance, geo, people, restaurant, standard, telecom, zuul
           username: diretoria@dnambille.com.br
           password: laila@3715
-          
+
+# recomendado pelo spring
+    loadbalancer:
+      ribbon:
+        enabled: false
+      
+ribbon:
+  eureka:
+    enabled: false
+    
 eureka:
   client:
+    healthcheck:
+      enabled: true
     register-with-eureka: true
     fetch-registry: false
     serviceUrl:
