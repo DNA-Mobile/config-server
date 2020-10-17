@@ -6,6 +6,11 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
+/**
+ * Access point for the microservice configuration server
+ * @author Danilo Portela
+ *
+ */
 @EnableEurekaClient
 @EnableConfigServer
 @EnableDiscoveryClient
