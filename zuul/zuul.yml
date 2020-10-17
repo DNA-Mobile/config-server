@@ -6,7 +6,7 @@ spring:
     mongodb:
       host: mongodb://localhost
       port: 27017
-      database: auth
+      database: iam
       username: admin
       password: laila@3715
       
@@ -17,7 +17,7 @@ spring:
       ddl-auto: update
 
   datasource: 
-    url: jdbc:mysql://localhost:3306/auth?useTimezone=true&serverTimezone=UTC 
+    url: jdbc:mysql://localhost:3306/iam?useTimezone=true&serverTimezone=UTC 
     driver-class-name: com.mysql.cj.jdbc.Driver 
     username: root
     password: laila@3715
