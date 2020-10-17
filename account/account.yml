@@ -1,27 +1,30 @@
 spring:
   main:
     allow-bean-definition-overriding: true
-    
+  
   data:
     mongodb:
       host: mongodb://localhost
       port: 27017
-      database: delivery
+      database: account
       username: admin
       password: laila@3715
       
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect 
     generate-ddl: true
-    open-in-view: false
     hibernate:
       ddl-auto: update
 
   datasource: 
-    url: jdbc:mysql://localhost:3306/delivery?useTimezone=true&serverTimezone=UTC 
-    driver-class-name: com.mysql.cj.jdbc.Driver 
+    url: jdbc:mysql://localhost:3306/account?useTimezone=true&serverTimezone=UTC 
+    driver-class-name: com.mysql.jdbc.Driver 
     username: root
     password: laila@3715
+    hikari:
+      minIlde: 10
+      idle-timeout: 10000
+      maximumPoolSize: 30
     
 #  profiles: prod
 #  datasource: 
