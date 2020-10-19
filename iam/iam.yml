@@ -1,11 +1,11 @@
-spring:
-  main:
-    allow-bean-definition-overriding: true
-
 security:
   oauth2:
     resource:
       id: bcrypt
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
 
   data:
     mongodb:
