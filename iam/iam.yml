@@ -1,3 +1,7 @@
+dnamobile:
+  iam:
+    secret-key: dnamobile
+
 security:
   oauth2:
     resource:
