@@ -1,7 +1,12 @@
 spring:
   main:
     allow-bean-definition-overriding: true
-  
+
+security:
+  oauth2:
+    resource:
+      id: bcrypt
+
   data:
     mongodb:
       host: mongodb://localhost
