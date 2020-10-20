@@ -38,19 +38,23 @@ spring:
       idle-timeout: 10000
       maximumPoolSize: 30
 
-admin:
-  username: admin
-  email: admin@dnamobille.com.br
-  password: 123456
+account:
+	users[0]:
+	  role: ADMIN
+	  username: admin
+	  email: admin@dnamobille.com.br
+	  password: 123456
   
-client:
-  username: client
-  email: client@dnamobille.com.br
-  password: 123456
-  
-iam:
-  username: iam
-  email: client@dnamobille.com.br
-  password: 123456
+  users[1]:
+	  role: CLIENT
+	  username: client
+	  email: client@dnamobille.com.br
+	  password: 123456
+		 
+	users[2]:
+	  role: IAM
+	  username: iam
+	  email: client@dnamobille.com.br
+	  password: 123456
    
 #  profiles: prod
