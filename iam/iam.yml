@@ -23,9 +23,9 @@ spring:
             enable: true
 
   security:
-	  oauth2:
-	    resource:
-	      id: bcrypt
+    oauth2:
+      resource:
+        id: bcrypt
 
   data:
     mongodb:
