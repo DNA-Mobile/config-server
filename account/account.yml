@@ -37,5 +37,20 @@ spring:
       minIlde: 10
       idle-timeout: 10000
       maximumPoolSize: 30
-    
+
+admin:
+  username: admin
+  email: admin@dnamobille.com.br
+  password: 123456
+  
+client:
+  username: client
+  email: client@dnamobille.com.br
+  password: 123456
+  
+iam:
+  username: iam
+  email: client@dnamobille.com.br
+  password: 123456
+   
 #  profiles: prod
