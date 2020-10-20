@@ -1,19 +1,7 @@
 spring:
   main:
     allow-bean-definition-overriding: true
-
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    username: diretoria@dnamobille.com.br
-    password: laila@3715
-    properties:
-      mail: 
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-     
+  
   data:
     mongodb:
       host: mongodb://localhost
