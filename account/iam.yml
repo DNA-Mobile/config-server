@@ -1,3 +1,4 @@
-username: iam
-email: client@dnamobille.com.br
-password: 123456
+iam:
+  username: iam
+  email: client@dnamobille.com.br
+  password: 123456
