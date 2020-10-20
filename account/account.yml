@@ -39,22 +39,20 @@ spring:
       maximumPoolSize: 30
 
 account:
-	users[0]:
-	  role: ADMIN
-	  username: admin
-	  email: admin@dnamobille.com.br
-	  password: 123456
-  
+  users[0]:
+    role: ADMIN
+    username: admin
+    email: admin@dnamobille.com.br
+    password: 123456
   users[1]:
-	  role: CLIENT
-	  username: client
-	  email: client@dnamobille.com.br
-	  password: 123456
-		 
-	users[2]:
-	  role: IAM
-	  username: iam
-	  email: client@dnamobille.com.br
-	  password: 123456
+    role: CLIENT
+    username: client
+    email: client@dnamobille.com.br
+    password: 123456 
+  users[2]:
+    role: IAM
+    username: iam
+    email: client@dnamobille.com.br
+    password: 123456
    
 #  profiles: prod
