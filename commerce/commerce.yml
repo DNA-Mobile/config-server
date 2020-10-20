@@ -2,6 +2,18 @@ spring:
   main:
     allow-bean-definition-overriding: true
     
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: diretoria@dnamobille.com.br
+    password: laila@3715
+    properties:
+      mail: 
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    
   data:
     mongodb:
       host: mongodb://localhost
@@ -23,8 +35,3 @@ spring:
     password: laila@3715
     
 #  profiles: prod
-#  datasource: 
-#    url: jdbc:mysql://localhost:3306/geo?useTimezone=true&serverTimezone=UTC 
-#    driver-class-name: com.mysql.cj.jdbc.Driver 
-#    username: root
-#    password: laila3715
