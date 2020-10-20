@@ -1,10 +1,9 @@
-dnamobile:
-  iam:
-    secret-key: dnamobile
-    refresh-token:
-      validity: 50000
-    access-token:
-      validity: 30000
+iam:
+  secret-key: dnamobile
+  refresh-token:
+    validity: 50000
+  access-token:
+    validity: 30000
 
 spring:
   main:
