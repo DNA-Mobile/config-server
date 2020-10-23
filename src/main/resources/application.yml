@@ -5,6 +5,10 @@ spring:
   application:
     name: config  
 
+  devtools:
+    livereload:
+      enabled: false
+
   cloud:
     config:
       server:
