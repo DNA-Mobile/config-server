@@ -1,4 +1,13 @@
 spring:
+
+  data:
+    mongodb:
+      host: mongodb://localhost
+      port: 27017
+      database: account
+      username: admin
+      password: laila@3715
+
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect 
     generate-ddl: true
@@ -10,6 +19,10 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver 
     username: root
     password: laila@3715
+    hikari:
+      minIlde: 10
+      idle-timeout: 10000
+      maximumPoolSize: 30
     
 #  profiles: prod
 #  datasource: 
